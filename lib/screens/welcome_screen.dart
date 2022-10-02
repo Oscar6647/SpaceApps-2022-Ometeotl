@@ -28,7 +28,7 @@ class Welcome extends StatelessWidget {
                     SizedBox(
                       width: 300,
                       height: 300,
-                      child: Image.asset('assets/logo.png'),
+                      child: Image.asset('assets/logoChanged.png'),
                     ),
                   ],
                 ),

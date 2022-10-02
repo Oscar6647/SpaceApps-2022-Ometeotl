@@ -175,7 +175,7 @@ class PageScreen extends StatelessWidget {
                   const Image(
                     alignment: Alignment.bottomCenter,
                     height: 150,
-                    image: AssetImage("assets/images/logo.png"),
+                    image: AssetImage("assets/logoChanged.png"),
                     fit: BoxFit.contain,
                   )
                 ],

@@ -68,15 +68,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets: 
-  - assets/images/
-  - assets/fondoWelcome.jpg
-  - assets/logo.png
-  - assets/arrow.png
-  - assets/water.jpg
-  - assets/stars.jpg
-  - assets/pollution.jpg
-  - assets/covid.jpg
-  - assets/supplywater.jpg
+  - assets/
          # your font file name and the directory
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

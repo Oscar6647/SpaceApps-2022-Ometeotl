@@ -26,7 +26,7 @@ class StartScreen extends StatelessWidget {
             SizedBox(
               width: size.width,
               height: size.height * .3,
-              child: Image.asset('assets/logo.png'),
+              child: Image.asset('assets/logoChanged.png'),
             ),
             Align(
               alignment: Alignment.center,
