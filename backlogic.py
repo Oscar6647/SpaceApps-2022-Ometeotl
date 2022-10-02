@@ -1,12 +1,20 @@
 #THIS FILE IS A TEST (NOT FINAL VERSION)
 
-from flask import Flask,render_template 
+from flask import Flask,render_template,request
 
 app= Flask (__name__)
 
-@app.route('/')
-def hello_world():
+@app.route('/',methods=['GET','POST'])
+def index(): 
+    if request.method == 'POST':
+        if request.form.get('action1') == 'VALUE1':
+                return render_template('land1.html')
+        elif  request.form.get('action2') == 'VALUE2':
+                pass # do something else
+        else:
+                pass # unknown
+    elif request.method == 'GET':
+        return render_template('index.html')
     return render_template('index.html')
-
 if __name__ == 'main':
     app.run()
