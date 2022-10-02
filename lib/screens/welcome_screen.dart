@@ -8,7 +8,7 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.infinity,
+        width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -41,8 +41,25 @@ class Welcome extends StatelessWidget {
                     padding: const EdgeInsets.all(40.0),
                     child: GestureDetector(
                       onTap: () {
+                        /* Navigator.push(
+                            context,
+                            PageRouteBuilder(
+                                pageBuilder:
+                                    (context, animation, secondaryAnimation) =>
+                                        StartScreen(),
+                                transitionsBuilder: ((context, animation,
+                                    secondaryAnimation, child) {
+                                  const begin = Offset(0.0, 1.0);
+                                  const end = Offset.zero;
+                                  final tween = Tween(begin: begin, end: end);
+                                  final offsetAnimation =
+                                      animation.drive(tween);
+                                  return child;
+                                }))); */
                         Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (_) => const StartScreen()));
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const StartScreen()));
                       },
                       child: Container(
                         height: 50,
@@ -54,10 +71,11 @@ class Welcome extends StatelessWidget {
                           child: Text(
                             'Get Started',
                             style: TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
-                                fontFamily: 'LexendDeca'),
+                              fontSize: 22,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                              fontFamily: 'LexendDeca',
+                            ),
                           ),
                         ),
                       ),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapps/widget/map.dart';
-import 'package:spaceapps/widget/mapbutton.dart';
 
 import '../widget/card.dart';
 
@@ -21,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
 //        backgroundColor: Colors.transparent,
         backgroundColor: const Color(0x44000000),
         elevation: 20,
-        title: const Text("Choose what to view"),
+        title: const Text("Tell us your interests"),
       ),
       body: Container(
         width: double.infinity,
@@ -37,12 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                MapButton(pressSelect: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const MapWidget()));
-                }),
+                const SizedBox(
+                  height: 20,
+                ),
                 ContentCard(
                   category: 'Rain Forecast',
                   thumbnailUrl: 'assets/water.jpg',

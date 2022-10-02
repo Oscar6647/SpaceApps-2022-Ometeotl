@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class ContentCard extends StatelessWidget {
+class ContentCard extends StatefulWidget {
   final String category;
   final IconData icon;
   final String thumbnailUrl;
@@ -14,6 +13,12 @@ class ContentCard extends StatelessWidget {
     required this.thumbnailUrl,
     required this.icon,
   });
+
+  @override
+  State<ContentCard> createState() => _ContentCardState();
+}
+
+class _ContentCardState extends State<ContentCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -39,7 +44,7 @@ class ContentCard extends StatelessWidget {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image: AssetImage(thumbnailUrl),
+          image: AssetImage(widget.thumbnailUrl),
           fit: BoxFit.cover,
         ),
       ),
@@ -58,10 +63,10 @@ class ContentCard extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Icon(icon, color: Colors.white, size: 20),
+                      Icon(widget.icon, color: Colors.white, size: 20),
                       const SizedBox(width: 7),
                       Text(
-                        category,
+                        widget.category,
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -69,11 +74,13 @@ class ContentCard extends StatelessWidget {
                       ),
                       Checkbox(
                         checkColor: Colors.white,
-                        value: checkBoxValue,
+                        value: widget.checkBoxValue,
                         onChanged: (bool? value) {
-                          setState(() {
-                            checkBoxValue = value!;
-                          });
+                          if (value != null) {
+                            setState(() {
+                              widget.checkBoxValue = value;
+                            });
+                          }
                         },
                       )
                     ],
@@ -87,5 +94,3 @@ class ContentCard extends StatelessWidget {
     );
   }
 }
-
-void setState(Null Function() param0) {}
