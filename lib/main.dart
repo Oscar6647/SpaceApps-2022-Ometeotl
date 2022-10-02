@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapps/screenmanager.dart';
+import 'package:spaceapps/screens/home_screen.dart';
+import 'package:spaceapps/widget/map.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const ScreenManager()
+      title: 'Ometeotl',
+      theme: ThemeData(),
+      home: const HomeScreen()
     );
   }
 }
