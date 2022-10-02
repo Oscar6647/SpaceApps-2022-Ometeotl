@@ -1,20 +1,9 @@
 #THIS FILE IS A TEST (NOT FINAL VERSION)
-
-from flask import Flask,render_template,request
-
-app= Flask (__name__)
-
-@app.route('/',methods=['GET','POST'])
-def index(): 
-    if request.method == 'POST':
-        if request.form.get('action1') == 'VALUE1':
-                return render_template('land1.html')
-        elif  request.form.get('action2') == 'VALUE2':
-                pass # do something else
-        else:
-                pass # unknown
-    elif request.method == 'GET':
-        return render_template('index.html')
+from flask import Flask, request,render_template
+app = Flask(__name__)
+@app.route('/')
+def index():
     return render_template('index.html')
-if __name__ == 'main':
-    app.run()
+@app.route('/land1',methods=['GET','POST'])
+def vmd_timestamp():
+    return render_template('land1.html')
