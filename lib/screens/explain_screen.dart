@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:spaceapps/screens/home_screen.dart';
 
 class ExplainScreen extends StatefulWidget {
   const ExplainScreen({Key? key}) : super(key: key);
@@ -18,29 +19,32 @@ class _ExplainScreenState extends State<ExplainScreen> {
         controller: pageController,
         children: [
           PageScreen(
-              pageController: pageController,
-              titleText: "Welcome",
-              descriptionText: "Easily access Earth data. Anytime, anywhere",
-              icon: Icons.map,
-              nextPage: 1,
-              backgroundColor: Colors.lightBlue),
+            pageController: pageController,
+            titleText: "Welcome",
+            descriptionText: "Easily access Earth data. Anytime, anywhere",
+            icon: Icons.map,
+            nextPage: 1,
+            backgroundColor: Colors.lightBlue,
+            goNextPage: false,
+          ),
           PageScreen(
-              pageController: pageController,
-              titleText: "Discover",
-              descriptionText: "Learn new information about our planet",
-              icon: Icons.cloud,
-              nextPage: 2,
-              backgroundColor: Colors.purple),
+            pageController: pageController,
+            titleText: "Discover",
+            descriptionText: "Learn new information about our planet",
+            icon: Icons.cloud,
+            nextPage: 2,
+            backgroundColor: Colors.purple,
+            goNextPage: false,
+          ),
           PageScreen(
-              pageController: pageController,
-              titleText: "Made for everyone",
-              descriptionText: "Fiter information that's relevant to you",
-              icon: Icons.people,
-              nextPage: 3,
-              backgroundColor: Colors.red),
-          Container(
-            decoration: const BoxDecoration(color: Colors.black),
-          )
+            pageController: pageController,
+            titleText: "Made for everyone",
+            descriptionText: "Fiter information that's relevant to you",
+            icon: Icons.people,
+            nextPage: 3,
+            backgroundColor: Colors.red,
+            goNextPage: true,
+          ),
         ],
       ),
     );
@@ -54,6 +58,7 @@ class PageScreen extends StatelessWidget {
   final int nextPage;
   final Color backgroundColor;
   final PageController pageController;
+  final bool goNextPage;
 
   const PageScreen({
     super.key,
@@ -63,6 +68,7 @@ class PageScreen extends StatelessWidget {
     required this.icon,
     required this.nextPage,
     required this.backgroundColor,
+    required this.goNextPage,
   });
 
   @override
@@ -131,9 +137,16 @@ class PageScreen extends StatelessWidget {
                     child: TextButton(
                       onPressed: () {
                         Curve curve = Curves.ease;
-                        pageController.animateToPage(nextPage,
-                            duration: const Duration(milliseconds: 500),
-                            curve: curve);
+                        goNextPage
+                            ? Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const HomeScreen()))
+                            : {
+                                pageController.animateToPage(nextPage,
+                                    duration: const Duration(milliseconds: 500),
+                                    curve: curve)
+                              };
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,

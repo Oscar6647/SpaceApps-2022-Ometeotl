@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:spaceapps/widget/map.dart';
 
 class MapButton extends StatelessWidget {
-  final String title;
   final VoidCallback pressSelect;
 
-  const MapButton({
-    required this.title,
+  const MapButton({super.key, 
     required this.pressSelect,
   });
 

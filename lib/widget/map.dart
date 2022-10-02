@@ -10,7 +10,7 @@ class MapWidget extends StatefulWidget {
 }
 
 class _MapWidgetState extends State<MapWidget> {
-  final MapController mapController = new MapController();
+  final MapController mapController = MapController();
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapps/screenmanager.dart';
-import 'package:spaceapps/screens/home_screen.dart';
-import 'package:spaceapps/widget/map.dart';
+import 'package:spaceapps/screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ometeotl',
       theme: ThemeData(),
-      home: const HomeScreen()
+      home: const Welcome(),
     );
   }
 }
