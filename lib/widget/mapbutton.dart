@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:spaceapps/widget/map.dart';
 
 class MapButton extends StatelessWidget {
-  final VoidCallback pressSelect;
-
   const MapButton({super.key, 
-    required this.pressSelect,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: pressSelect,
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => MapWidget()));
+      },
       child: Container(
         padding: const EdgeInsets.only(
           top: 15,

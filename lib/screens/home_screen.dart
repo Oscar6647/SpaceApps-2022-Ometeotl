@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapps/screens/infohub_screen.dart';
+import 'package:spaceapps/widget/mapbutton.dart';
 
 import '../widget/card.dart';
 
@@ -39,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 20,
                 ),
+                MapButton(),
                 ContentCard(
                   category: 'Rain Forecast',
                   thumbnailUrl: 'assets/water.jpg',
