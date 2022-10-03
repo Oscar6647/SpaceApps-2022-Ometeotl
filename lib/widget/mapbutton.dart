@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:spaceapps/widget/map.dart';
 
 class MapButton extends StatelessWidget {
-  const MapButton({super.key, 
+  const MapButton({
+    super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => MapWidget()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => const MapWidget()));
       },
       child: Container(
         padding: const EdgeInsets.only(
@@ -28,7 +30,9 @@ class MapButton extends StatelessWidget {
             const MapWidget(),
             Container(
               height: 400,
-              decoration: const BoxDecoration(color: Colors.transparent),
+              decoration: const BoxDecoration(
+                color: Colors.transparent,
+                ),
             ),
           ],
         ),

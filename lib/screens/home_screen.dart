@@ -40,7 +40,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                MapButton(),
                 ContentCard(
                   category: 'Rain Forecast',
                   thumbnailUrl: 'assets/water.jpg',

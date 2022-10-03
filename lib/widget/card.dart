@@ -1,9 +1,14 @@
+// ignore_for_file: unnecessary_new
+
 import 'package:flutter/material.dart';
+
+import '../screens/home_screen.dart';
 
 class ContentCard extends StatefulWidget {
   final String category;
   final IconData icon;
   final String thumbnailUrl;
+
 
   bool value = false;
   bool checkBoxValue = false;
