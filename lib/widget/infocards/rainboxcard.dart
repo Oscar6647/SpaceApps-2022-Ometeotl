@@ -5,14 +5,16 @@ import 'package:flutter/material.dart';
 class RainBoxCard extends StatelessWidget {
   final String text;
   final String image;
+  final IconData icon;
 
   RainBoxCard({
     super.key,
     required this.text,
     required this.image,
+    required this.icon,
   });
 
-  IconData icon = const Icon(Icons.home) as IconData;
+  /* late IconData icon;
   String rainTextDescription = "";
 
   String filterRain(number) {
@@ -35,7 +37,7 @@ class RainBoxCard extends StatelessWidget {
     }
     return "";
   }
-
+ */
   @override
   Widget build(BuildContext context) {
     return Container(

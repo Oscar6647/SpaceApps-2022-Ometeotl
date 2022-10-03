@@ -120,6 +120,7 @@ class InfoHub extends StatelessWidget {
                                     children: [
                                       RainBoxCard(
                                         text: "Rain Forecast",
+                                        icon: Icons.thunderstorm,
                                         image: "assets/water.jpg",
                                       ),
                                       PollutionBoxCard(
