@@ -1,9 +1,29 @@
-#THIS FILE IS A TEST (NOT FINAL VERSION)
-from flask import Flask, request,render_template
-app = Flask(__name__)
-@app.route('/')
-def index():
-    return render_template('index.html')
-@app.route('/land1',methods=['GET','POST'])
-def vmd_timestamp():
-    return render_template('land1.html')
+import pickle
+#Opens model chosen Rain fall in this case
+
+loaded_model = pickle.load(open("model/RAINFALL_MTY.model", 'rb'))
+
+#This is a user input example and is inserted into the model to show results
+result = loaded_model.predict([[4,5,6,7,8,9,10,11]])
+print("result:", result) #debug to view results
+
+#results vary therefore a different set of prints will be deployed for each case
+if result  == 0:
+    print("SUNNY")
+elif result == 1:
+    print("Rain but not that heavy")
+else:
+    print("RAINING COOL")
+
+#Opens model chosen Pollution in this case
+loaded_model = pickle.load(open("model/Pollution_Air.model", 'rb'))
+
+#This is a user input example and is inserted into the model to show results
+result = loaded_model.predict([[4,5,6,7,8,9]])
+print("result:", result)#debug to view results
+
+#results vary therefore a different set of prints will be deployed for each case
+if result == 0:
+    print("GO!")
+else:
+    print("Stay")
