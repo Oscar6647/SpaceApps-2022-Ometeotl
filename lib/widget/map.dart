@@ -4,7 +4,9 @@ import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
 
 class MapWidget extends StatefulWidget {
-  const MapWidget({Key? key}) : super(key: key);
+  final bool fullScreen;
+
+  const MapWidget({required this.fullScreen});
 
   @override
   State<MapWidget> createState() => _MapWidgetState();
@@ -19,6 +21,7 @@ class _MapWidgetState extends State<MapWidget> {
 
   double userLatitude = 0;
   double userLongitude = 0;
+
 
   Future<void> _getUserLocation() async {
     Location location = Location();
@@ -40,11 +43,10 @@ class _MapWidgetState extends State<MapWidget> {
         return;
       }
     }
-    print("HA");
 
-    final _locationData = await location.getLocation();
+    final locationData = await location.getLocation();
     setState(() {
-      _userLocation = _locationData;
+      _userLocation = locationData;
       if (_userLocation != null) {
         userLatitude = _userLocation!.latitude!;
         userLongitude = _userLocation!.longitude!;
@@ -61,39 +63,71 @@ class _MapWidgetState extends State<MapWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: FlutterMap(
-        options: MapOptions(
-          center: LatLng(25.686613, -100.31000),
-          zoom: 10.0,
-          maxZoom: 18.0,
-          maxBounds: LatLngBounds(
-            LatLng(-90, -180.0),
-            LatLng(90.0, 180.0),
-          ),
-          enableScrollWheel: true,
-          scrollWheelVelocity: 0.005,
-          enableMultiFingerGestureRace: true,
-          keepAlive: true,
-          // interactiveFlags: InteractiveFlag.pinchMove
-        ),
-        mapController: mapController,
+      body: Stack(
         children: [
-          TileLayer(
-            urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-            subdomains: const ["a", "b", "c"],
-            userAgentPackageName: 'dev.fleaflet.flutter_map.example',
-          ),
-          MarkerLayer(
-            markers: [
-              Marker(
-                point: LatLng(userLatitude, userLongitude),
-                builder: (context) => Icon(
-                  Icons.pin_drop,
-                  color: Colors.black,
-                ),
+          FlutterMap(
+            options: MapOptions(
+              center: LatLng(25.686613, -100.31000),
+              zoom: 10.0,
+              maxZoom: 18.0,
+              maxBounds: LatLngBounds(
+                LatLng(-90, -180.0),
+                LatLng(90.0, 180.0),
+              ),
+              enableScrollWheel: true,
+              scrollWheelVelocity: 0.005,
+              enableMultiFingerGestureRace: true,
+              keepAlive: true,
+              // interactiveFlags: InteractiveFlag.pinchMove
+            ),
+            mapController: mapController,
+            children: [
+              TileLayer(
+                urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                subdomains: const ["a", "b", "c"],
+                userAgentPackageName: 'dev.fleaflet.flutter_map.example',
+              ),
+              MarkerLayer(
+                markers: [
+                  Marker(
+                    point: LatLng(userLatitude, userLongitude),
+                    builder: (context) => const Icon(
+                      Icons.pin_drop,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
+          Visibility(
+            visible: widget.fullScreen,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 50.0, left: 10.0),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(
+                      Icons.arrow_back_ios,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  const Text(
+                    "Back",
+                    style: TextStyle(
+                      fontFamily: "Manrope",
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );

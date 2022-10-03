@@ -11,7 +11,7 @@ class MapButton extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const MapWidget()));
+            context, MaterialPageRoute(builder: (context) => MapWidget(fullScreen: true)));
       },
       child: Container(
         padding: const EdgeInsets.only(
@@ -27,7 +27,7 @@ class MapButton extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            const MapWidget(),
+            const MapWidget(fullScreen: false),
             Container(
               height: 400,
               decoration: const BoxDecoration(

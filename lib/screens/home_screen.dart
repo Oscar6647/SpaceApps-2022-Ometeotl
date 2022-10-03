@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapps/screens/infohub_screen.dart';
-import 'package:spaceapps/widget/mapbutton.dart';
 
 import '../widget/card.dart';
 
@@ -51,13 +50,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: Icons.factory,
                 ),
                 ContentCard(
-                    category: 'COVID-19',
-                    thumbnailUrl: 'assets/covid.jpg',
-                    icon: Icons.coronavirus),
+                  category: 'COVID-19',
+                  thumbnailUrl: 'assets/covid.jpg',
+                  icon: Icons.coronavirus,
+                ),
                 ContentCard(
-                    category: 'Water Flow',
-                    thumbnailUrl: 'assets/supplywater.jpg',
-                    icon: Icons.water_drop),
+                  category: 'Water Flow',
+                  thumbnailUrl: 'assets/supplywater.jpg',
+                  icon: Icons.water_drop,
+                ),
                 Align(
                   alignment: Alignment.topRight,
                   child: TextButton(
@@ -71,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       {}
                     },
                     child: Padding(
-                      padding: const EdgeInsets.only(right : 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: const [
