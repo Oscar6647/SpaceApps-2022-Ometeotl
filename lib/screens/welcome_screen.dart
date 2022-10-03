@@ -12,7 +12,7 @@ class Welcome extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/fondoWelcome.jpg"),
+            image: AssetImage("assets/stars.jpg"),
             fit: BoxFit.cover,
           ),
         ),
