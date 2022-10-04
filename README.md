@@ -25,24 +25,15 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Oscar6647/SpaceApps-2022-Ometeotl">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Ometeotl Ambiental Solutions</h3>
 
   <p align="center">
     We participaded in the challenge: Capacity Building Resources Gateaway
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Oscar6647/SpaceApps-2022-Ometeotl"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://drive.google.com/file/d/1QWwP7SG6py8EyWiH0IRyxO52G0_y9S-i/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
@@ -251,7 +242,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jocelynvelarde/
-[product-screenshot]: https://user-images.githubusercontent.com/70779495/193842161-c007d6e3-5f88-42a6-997a-18a38b201c36.png
+[product-screenshot]: 
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
