@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Oscar6647/SpaceApps-2022-Ometeotl">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -239,19 +239,19 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+[contributors-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+[forks-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/network/members
+[stars-shield]: https://img.shields.io/github/stars/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+[stars-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+[issues-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/issues
+[license-shield]: https://img.shields.io/github/license/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+[license-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/jocelynvelarde/
+[product-screenshot]: https://user-images.githubusercontent.com/70779495/193842161-c007d6e3-5f88-42a6-997a-18a38b201c36.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
