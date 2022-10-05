@@ -130,6 +130,12 @@ After installing Flutter you are good to go! Now let us procede in cloning this 
    ```
 4. Select an emulator, device or web platform in `Select Device`
 
+5. Run command in terminal
+   ```sh
+   flutter run
+   ```
+ 6. You are ready to go! Have fun with our app...
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
