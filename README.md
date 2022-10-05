@@ -108,34 +108,27 @@ In this section we included the technologies, libraries and tools we used to dev
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+We are currently working to launch our platform in Android and Web. But for the mean time here are some steps to build the solution from your computer and then install it on yout mobile device. 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Install Flutter. You can follow the link for the installation steps. 
+* https://docs.flutter.dev/get-started/install
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+After installing Flutter you are good to go! Now let us procede in cloning this repository with all the source code :smile:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Oscar6647/SpaceApps-2022-Ometeotl.git
    ```
-3. Install NPM packages
+3. Run command in terminal
    ```sh
-   npm install
+   flutter pub get
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+4. Select an emulator, device or web platform in `Select Device`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
