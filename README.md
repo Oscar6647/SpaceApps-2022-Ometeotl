@@ -188,3 +188,16 @@ Jocelyn - a01285780@tec.mx
 Project Link: [https://github.com/JocelynVelarde](https://github.com/JocelynVelarde)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+- [contributors-shield]: https://img.shields.io/github/contributors/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+- [contributors-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/graphs/contributors
+- [forks-shield]: https://img.shields.io/github/forks/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+- [forks-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/network/members
+- [stars-shield]: https://img.shields.io/github/stars/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+- [stars-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/stargazers
+- [issues-shield]: https://img.shields.io/github/issues/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+- [issues-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/issues
+- [license-shield]: https://img.shields.io/github/license/Oscar6647/SpaceApps-2022-Ometeotl.svg?style=for-the-badge
+- [license-url]: https://github.com/Oscar6647/SpaceApps-2022-Ometeotl/blob/master/LICENSE.txt
+- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+- [linkedin-url]: https://www.linkedin.com/in/jocelynvelarde/
