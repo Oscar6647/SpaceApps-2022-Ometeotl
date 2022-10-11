@@ -143,8 +143,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Authors
 
 
-* **Oscar Cardenas** - [Oscar6647](https://github.com/Oscar6647](https://github.com/Oscar6647)
-* **Jocelyn Velarde** - [JocelynVelarde](https://github.com/JocelynVelarde](https://github.com/JocelynVelarde)
+* **Oscar Cardenas** - [Oscar6647](https://github.com/Oscar6647)
+* **Jocelyn Velarde** - [JocelynVelarde](https://github.com/JocelynVelarde)
 * **Juan Pablo Gutiérrez** - [AndromedaHelix](https://github.com/AndromedaHelix)
 
 
