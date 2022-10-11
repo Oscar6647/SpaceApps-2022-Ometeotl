@@ -117,10 +117,10 @@ class InfoHub extends StatelessWidget {
                                       crossAxisSpacing: 10,
                                       mainAxisSpacing: 10,
                                     ),
-                                    children: [
+                                    children:  [
                                       RainBoxCard(
                                         text: "Rain Forecast",
-                                        icon: Icons.thunderstorm,
+                                        // icon: Icons.thunderstorm,
                                         image: "assets/water.jpg",
                                       ),
                                       PollutionBoxCard(

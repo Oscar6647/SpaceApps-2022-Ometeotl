@@ -2,42 +2,62 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class RainBoxCard extends StatelessWidget {
+class RainBoxCard extends StatefulWidget {
   final String text;
   final String image;
-  final IconData icon;
 
   RainBoxCard({
     super.key,
     required this.text,
     required this.image,
-    required this.icon,
   });
 
-  /* late IconData icon;
-  String rainTextDescription = "";
+  @override
+  State<RainBoxCard> createState() => _RainBoxCardState();
+}
 
-  String filterRain(number) {
+class _RainBoxCardState extends State<RainBoxCard> {
+  late IconData icon;
 
-    int number = 0 + Random().nextInt(0 - 2);
+  late int number;
+
+  String filterRain() {
+    String rainTextDescription = "";
 
     if (number == 0) {
-      rainTextDescription == "It is sunny outside";
-      icon = const Icon(Icons.sunny) as IconData;
-      return rainTextDescription;
+      print("Selected 0");
+      setState(() {
+        rainTextDescription = "It is sunny outside";
+        icon = Icons.sunny;
+      });
+      rainTextDescription;
     } else if (number == 1) {
-      rainTextDescription == "It is raining, be careful";
-      icon = const Icon(Icons.water_drop) as IconData;
-      return rainTextDescription;
+      print("Selected 1");
+      setState(() {
+        rainTextDescription = "It is raining, be careful";
+        icon = Icons.water_drop;
+      });
+      rainTextDescription;
     } else if (number == 2) {
-      rainTextDescription == "There is a big storm, don't go outside";
-      icon = const Icon(Icons.storm) as IconData;
-
-      return rainTextDescription;
+      print("Selected 2");
+      setState(() {
+        rainTextDescription = "There is a big storm, don't go outside";
+        icon = Icons.storm;
+      });
+      rainTextDescription;
     }
-    return "";
+    print(rainTextDescription);
+    return rainTextDescription;
   }
- */
+
+  @override
+  void initState() {
+    super.initState();
+    number = Random().nextInt(3 - 0);
+
+    filterRain();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -59,7 +79,7 @@ class RainBoxCard extends StatelessWidget {
             Colors.black.withOpacity(0.35),
             BlendMode.multiply,
           ),
-          image: AssetImage(image),
+          image: AssetImage(widget.image),
           fit: BoxFit.cover,
         ),
       ),
@@ -74,11 +94,11 @@ class RainBoxCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                Icon(icon, color: Colors.white, size: 20),
+                const Icon(Icons.sunny, color: Colors.white, size: 20),
                 const SizedBox(width: 7),
                 Flexible(
                   child: Text(
-                    text,
+                    widget.text,
                     overflow: TextOverflow.visible,
                     style: const TextStyle(
                       color: Colors.white,
@@ -93,8 +113,8 @@ class RainBoxCard extends StatelessWidget {
             ),
             Row(
               children: [
-                const Icon(
-                  Icons.sunny,
+                Icon(
+                  icon,
                   color: Colors.white,
                   size: 18,
                 ),
@@ -103,7 +123,7 @@ class RainBoxCard extends StatelessWidget {
                 ),
                 Flexible(
                   child: Text(
-                    "You can go outside",
+                    filterRain(),
                     overflow: TextOverflow.visible,
                     style: const TextStyle(
                       color: Colors.white,

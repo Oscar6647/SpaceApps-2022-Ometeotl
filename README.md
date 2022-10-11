@@ -66,8 +66,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -80,10 +78,7 @@ How does this help users?
 
 The reason why Earth Obervation gateaways are not used, is the difficulty to understand the data. Most users are not familiar with this language and find it confusing to understand. Our gateaway can be used and understand by a 10 year old!
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -101,10 +96,7 @@ In this section we included the technologies, libraries and tools we used to dev
 * Visual Studio
 * XCode
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -139,35 +131,6 @@ After installing Flutter you are good to go! Now let us procede in cloning this 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "contribution".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- LICENSE -->
 ## License
 
@@ -176,16 +139,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- CONTACT -->
-## Contact
+<!-- Authors -->
+## Authors
 
-Oscar 
 
-My Github: [https://github.com/Oscar6647](https://github.com/Oscar6647)
+* **Oscar Cardenas** - [Oscar6647](https://github.com/Oscar6647](https://github.com/Oscar6647)
+* **Jocelyn Velarde** - [JocelynVelarde](https://github.com/JocelynVelarde](https://github.com/JocelynVelarde)
+* **Juan Pablo Gutiérrez** - [AndromedaHelix](https://github.com/AndromedaHelix)
 
-Jocelyn - a01285780@tec.mx
-
-My Github: [https://github.com/JocelynVelarde](https://github.com/JocelynVelarde)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
